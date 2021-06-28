@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. The rulers of which dynasty were first to make land grants to Brahmanas?</p>
+        <p><input type="radio" name="question1" value="1">A. Maurya</p>
+        <p><input type="radio" name="question1" value="2">B. Sunga</p>
+        <p><input type="radio" name="question1" value="3">C. Satvahana</p>
+        <p><input type="radio" name="question1" value="4">D. Kanvas</p>
+    </div>
+
+     <div class="main-div">
+        <p>Q2. Which among the following Buddhist scripture deals in the moral code of conduct?</p>
+        <p><input type="radio" name="question2" value="1">A. Abhidhamma Pitaka</p>
+        <p><input type="radio" name="question2" value="2">B. Vinay Pitaka</p>
+        <p><input type="radio" name="question2" value="3">C. Sutta Pitaka</p>
+        <p><input type="radio" name="question2" value="4">D. None of them</p>
+    </div>
+
+   <div class="main-div">
+        <p>Q3. In which among the following sacrifices, the sacrificial materials used was sura in Vedic Era?</p>
+        <p><input type="radio" name="question3" value="1">A. Agnistoma</p>
+        <p><input type="radio" name="question3" value="2">B. Rajasuya</p>
+        <p><input type="radio" name="question3" value="3">C. Sautramani</p>
+        <p><input type="radio" name="question3" value="4">D. Vajapeya</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. The cotton cloth worn by Indians had a brighter white colour than any cotton found elsewhere. This view was recorded by __?</p>
+        <p><input type="radio" name="question4" value="1">A. Alexander</p>
+        <p><input type="radio" name="question4" value="2">B. Megasthenes</p>
+        <p><input type="radio" name="question4" value="3">C. Nearchus</p>
+        <p><input type="radio" name="question4" value="4">D. Pliny</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. Which among conclusions has been derived from the debasement of the coins and gradual disappearance of gold coins during the post-Gupta period?</p>
+        <p><input type="radio" name="question5" value="1">A. Commodities became cheap</p>
+        <p><input type="radio" name="question5" value="2">B. Gold Mining was stalled</p>
+        <p><input type="radio" name="question5" value="3">C. Money economy was gradually replaced by Barter Economy</p>
+        <p><input type="radio" name="question5" value="4">D. There was a decline in trade</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. Who among the following was the author of Kiratarjuniya?</p>
+        <p><input type="radio" name="question6" value="1">A. Bharavi</p>
+        <p><input type="radio" name="question6" value="2">B. Dandin</p>
+        <p><input type="radio" name="question6" value="3">C. Varahmihira</p>
+        <p><input type="radio" name="question6" value="4">D. Kalidasa</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. The Kadamba dynasty was founded by whom?</p>
+        <p><input type="radio" name="question7" value="1">A. Konkanivarman</p>
+        <p><input type="radio" name="question7" value="2">B.  Kirtisarman</p>
+        <p><input type="radio" name="question7" value="3">C. Mayurasharma</p>
+        <p><input type="radio" name="question7" value="4">D.  Yajnavarman</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. Who among the following is the author of ‘Indica’ ?</p>
+        <p><input type="radio" name="question8" value="1">A.  Ashoka</p>
+        <p><input type="radio" name="question8" value="2">B.  Chankya</p>
+        <p><input type="radio" name="question8" value="3">C.  Megasthenes</p>
+        <p><input type="radio" name="question8" value="4">D.  Seleucus</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. At which of the following sites, all the Paleolithic, Mesolithic and Neolithic sites have been found in sequence?</p>
+        <p><input type="radio" name="question9" value="1">A. Sarai Nahar Rai</p>
+        <p><input type="radio" name="question9" value="2">B. Kurnool Valley</p>
+        <p><input type="radio" name="question9" value="3">C. Belan Valley</p>
+        <p><input type="radio" name="question9" value="4">D. Ahar</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. The Kalinga war was fought in which year of Ashoka reign?</p>
+        <p><input type="radio" name="question10" value="1">A. 6</p>
+        <p><input type="radio" name="question10" value="2">B. 7</p>
+        <p><input type="radio" name="question10" value="3">C. 8</p>
+        <p><input type="radio" name="question10" value="4">D. 9</p>
+    </div>
+
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/history1.js' %}"></script>
+{% endblock main %}

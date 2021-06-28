@@ -1,0 +1,97 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. The number of solution of tan x + sec x = 2cos x in [0, 2π] is:</p>
+        <p><input type="radio" name="question1" value="2">A. 2</p>
+        <p><input type="radio" name="question1" value="3">B. 3</p>
+        <p><input type="radio" name="question1" value="0">C. 0</p>
+        <p><input type="radio" name="question1" value="1">D. 1</p>
+    </div>
+
+     <div class="main-div">
+        <p>Q2. Which one is not periodic:</p>
+        <p><input type="radio" name="question2" value="|sin(3x)| + sin2(x)">A. |sin(3x)| + sin2(x)</p>
+        <p><input type="radio" name="question2" value="cos(√x) + cos2(x)">B. cos(√x) + cos2(x)</p>
+        <p><input type="radio" name="question2" value="cos(4x) + tan2(x)">C. cos(4x) + tan2(x)</p>
+        <p><input type="radio" name="question2" value="cos(2x) + sin(x)">D. cos(2x) + sin(x)</p>
+    </div>
+
+   <div class="main-div">
+        <p>Q3.A line makes the same angle θ,with each of the x and z axis.If the angle β, which it makes with y-axis, is such that sin2(β) = 3sin2(θ), then cos2(θ) equals:</p>
+        <p><input type="radio" name="question3" value="2/5">A. 2/5</p>
+        <p><input type="radio" name="question3" value="1/5">B. 1/5</p>
+        <p><input type="radio" name="question3" value="3/5">C. 3/5</p>
+        <p><input type="radio" name="question3" value="2/3">D. 2/3</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. The number of values of x in the interval[0,3π] satisfying the equation 2sin2(x) + 5sin(x) - 3 = 0 is:</p>
+        <p><input type="radio" name="question4" value="4">A. 4</p>
+        <p><input type="radio" name="question4" value="6">B. 6</p>
+        <p><input type="radio" name="question4" value="1">C. 1</p>
+        <p><input type="radio" name="question4" value="2">D. 2</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. If < x < π and cos(x) + sin(x) = 1/2, then tan(x) is:</p>
+        <p><input type="radio" name="question5" value="(1-√7)/4">A. (1-√7)/4</p>
+        <p><input type="radio" name="question5" value="(4-√7)/3">B. (4-√7)/3</p>
+        <p><input type="radio" name="question5" value="-(4+√7)/3">C. -(4+√7)/3</p>
+        <p><input type="radio" name="question5" value="(1+√7)/4">D. (1+√7)/4</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. Let A and B denote the statements<br>
+            A: cos(α) + sin(β) + cos(γ) = 0 <br>
+            B: sin(α) + sin(β) + sin(γ) = 0 <br>
+            If cos(β-γ) + cos(γ-α) + cos(α-β) = -3/2, then:
+        </p>
+        <p><input type="radio" name="question6" value="A is false and B is true">A. A is false and B is true</p>
+        <p><input type="radio" name="question6" value="both A and B are ture">B. both A and B are ture</p>
+        <p><input type="radio" name="question6" value="both A and B are false">C. both A and B are false</p>
+        <p><input type="radio" name="question6" value="A is true and B is false">D. A is true and B is false</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. If A = sin2(x) + cos4(x), then for all real x:</p>
+        <p><input type="radio" name="question7" value="(13/16)≤A≤1">A. (13/16)≤A≤1</p>
+        <p><input type="radio" name="question7" value="1≤A≤2">B. 1≤A≤2</p>
+        <p><input type="radio" name="question7" value="(3/4)≤A≤(13/16)">C. (3/4)≤A≤(13/16)</p>
+        <p><input type="radio" name="question7" value="(3/4)≤A≤1">D. (3/4)≤A≤1</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. In a ΔPQR, If 3sin(P) + 4cos(Q) = 6 and 4sin(Q) + 3cos(P) = 1, then the angle R is equal to:</p>
+        <p><input type="radio" name="question8" value="5π/6">A. 5π/6</p>
+        <p><input type="radio" name="question8" value="π/6">B. π/6</p>
+        <p><input type="radio" name="question8" value="π/4">C. π/4</p>
+        <p><input type="radio" name="question8" value="3π/4">D. 3π/4</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. If 0 ≤ x < 2π, then the number of real values of x, which satisfy the equation cos(x) + cos(3x) + cos(4x) = 0 is:</p>
+        <p><input type="radio" name="question9" value="7">A. 7</p>
+        <p><input type="radio" name="question9" value="9">B. 9</p>
+        <p><input type="radio" name="question9" value="3">C. 3</p>
+        <p><input type="radio" name="question9" value="5">D. 5</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. The number of solutons of sin(3x) = cos(2x), in the interval (π/2,π) is:</p>
+        <p><input type="radio" name="question10" value="1">A. 1</p>
+        <p><input type="radio" name="question10" value="2">B. 2</p>
+        <p><input type="radio" name="question10" value="3">C. 3</p>
+        <p><input type="radio" name="question10" value="4">D. 4</p>
+    </div>
+
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/math1.js' %}"></script>
+{% endblock main %}

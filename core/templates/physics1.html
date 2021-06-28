@@ -1,0 +1,94 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. Identify the pair whose dimentions are equal:</p>
+        <p><input type="radio" name="question1" value="torque nad work">A. torque nad work</p>
+        <p><input type="radio" name="question1" value="stress and energy">B. stress and energy</p>
+        <p><input type="radio" name="question1" value="force and stress">C. force and stress</p>
+        <p><input type="radio" name="question1" value="force and work">D. force and work</p>
+    </div>
+
+     <div class="main-div">
+        <p>Q2. A ball whose kinetic energy E, is projected at an angle of 45° to the horizontal. The kinetic energy of the ball highest point of its height will be:</p>
+        <p><input type="radio" name="question2" value="E">A. E</p>
+        <p><input type="radio" name="question2" value="E/√2">B. E/√2</p>
+        <p><input type="radio" name="question2" value="E/2">C. E/2</p>
+        <p><input type="radio" name="question2" value="zero">D. zero</p>
+    </div>
+
+   <div class="main-div">
+        <p>Q3. A car, moving with a speed of 50km/hr, can be stopped by brakes after at least 6 m. If the same car is moving at a speed of 100 km/hr, the minimum stopping distance is:</p>
+        <p><input type="radio" name="question3" value="12m">A. 12 m</p>
+        <p><input type="radio" name="question3" value="18m">B. 18 m</p>
+        <p><input type="radio" name="question3" value="24m">C. 24 m</p>
+        <p><input type="radio" name="question3" value="6m">D. 6 m</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. A ball  is released from the top of a tower of height h meters. It takes T second to reach the ground. What is the position of the ball in T/3 seconds? :</p>
+        <p><input type="radio" name="question4" value="8h/9">A. 8h/9 meters from the ground</p>
+        <p><input type="radio" name="question4" value="7h/9">B. 7h/9 meters from the ground</p>
+        <p><input type="radio" name="question4" value="h/9">C. h/9 meters from the ground</p>
+        <p><input type="radio" name="question4" value="7h/18">D. 7h/18 meters from the ground</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. A lift is moving down with acceleration a. A man in the lift drops a ball inside the lift. The acceleration of the ball as observed by the man in the lift and a man standung stationary on the ground are respectively:</p>
+        <p><input type="radio" name="question5" value="g,g">A. g,g</p>
+        <p><input type="radio" name="question5" value="g-a,g-a">B. g-a,g-a</p>
+        <p><input type="radio" name="question5" value="g-a,g">C. g-a,g</p>
+        <p><input type="radio" name="question5" value="a,g">D. a,g</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. Two forces are such that the sum of their magnitudes is 18 N and their resultant is 12 N which is perpendicular to the smaller force. Then the  magnitudes of the forces are:
+        </p>
+        <p><input type="radio" name="question6" value="12N,6N">A. 12N , 6N</p>
+        <p><input type="radio" name="question6" value="13N,5N">B. 13N , 5N</p>
+        <p><input type="radio" name="question6" value="10N,8N">C. 10N , 8N</p>
+        <p><input type="radio" name="question6" value="16N,2N">D. 16N , 2N</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. A marble block of mass 2 kg lying on ice when given a velocity of 6m/s is stopped by friction in 10s. Then the coefficient of friction is:</p>
+        <p><input type="radio" name="question7" value="0.02">A. 0.02</p>
+        <p><input type="radio" name="question7" value="0.03">B. 0.03</p>
+        <p><input type="radio" name="question7" value="0.04">C. 0.04</p>
+        <p><input type="radio" name="question7" value="0.06">D. 0.06</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. If a spring has time period T, and is cut into n equal parts, then the time period of each part will be:</p>
+        <p><input type="radio" name="question8" value="T√n">A. T√n</p>
+        <p><input type="radio" name="question8" value="T/√n">B. T/√n</p>
+        <p><input type="radio" name="question8" value="nT">C. nT</p>
+        <p><input type="radio" name="question8" value="T">D. T</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. A child swinging on a swing in sitting position, stands up, then the time period of the swing will:</p>
+        <p><input type="radio" name="question9" value="increase">A. increase</p>
+        <p><input type="radio" name="question9" value="decrease">B. decrease</p>
+        <p><input type="radio" name="question9" value="remains same">C. remains same</p>
+        <p><input type="radio" name="question9" value="last">D. increases of the child is long and decreases if the child is short</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. If a body looses half of its velocty on penetrating 3cm in a wooden block, then how much will it penetrate more before coming to rest? :</p>
+        <p><input type="radio" name="question10" value="1cm">A. 1cm</p>
+        <p><input type="radio" name="question10" value="2cm">B. 2cm</p>
+        <p><input type="radio" name="question10" value="3cm">C. 3cm</p>
+        <p><input type="radio" name="question10" value="4cm">D. 4cm</p>
+    </div>
+
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/physics1.js' %}"></script>
+{% endblock main %}

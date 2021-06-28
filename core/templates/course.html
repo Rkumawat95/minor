@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block main %}
+<div  class="container text-center box";>
+	<h1>Courses </h1>
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
+		<div class="col adiv text-dark">
+			<h2>jee</h2>
+			<div class="" style="margin-top: 20px;">
+			<ul>
+				<li><a href="{% url 'jeem' %}"><h4>Mathes</h4></a></li>
+				<li><a href="{% url 'jeep' %}"><h4>Physics</h4></a></li>
+				<li><a href="{% url 'jeec' %}"><h4>Chemistry</h4></a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="col bdiv text-dark">
+			<h2>Neet</h2>
+			<div class="" style="margin-top: 20px;">
+				<ul>
+					<li><a href="{% url 'Neetb' %}"><h4>Biology</h4></a></li>
+					<li><a href="{% url 'Neetp' %}"><h4>Physics</h4></a></li>
+					<li><a href="{% url 'Neetc' %}"><h4>Chemistry</h4></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col cdiv text-dark">
+			<h2>Mppat</h2>
+			<div class="" style="margin-top: 20px;">
+				<ul>
+					<li><a href="{% url 'mppatm' %}"><h4>Mathes</h4></a></li>
+					<li><a href="{% url 'mppatb' %}"><h4>Biology</h4></a></li>
+					<li><a href="{% url 'mppatp' %}"><h4>Physics</h4></a></li>
+					<li><a href="{% url 'mppatc' %}"><h4>Chemistry</h4></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col ddiv text-dark">
+			<h2>Upsc</h2>
+			<div class="" style="margin-top: 20px;">
+				<ul>
+					<li><a href="{% url 'upscc' %}"><h4>Current Affair</h4></a></li>
+					<li><a href="{% url 'upsch' %}"><h4>History</h4></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock main %}

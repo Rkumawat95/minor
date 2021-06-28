@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block main %}
+<div class="container text-center box text-primary">
+    <div class="row">
+    <div class="col">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <h1 class=""> LogIn </h1>
+            {% for fm in form %}
+            {{fm.label_tag}} {{fm}}
+             {{fm.errors|striptags}}<br><br>
+            {% endfor %}
+            <input type="submit" name="LogIn">
+        </form><br>
+        <h4>for Create New Account</h4>
+        <a href="{% url 'Signup' %}">Signup</a>
+    </div>
+    </div>
+</div>
+{% endblock main %}

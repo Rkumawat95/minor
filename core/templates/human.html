@@ -1,0 +1,92 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. Name the site where digestion of proteins occurs:</p>
+        <p><input type="radio" name="question1" value="Pancreas">A. Pancreas</p>
+        <p><input type="radio" name="question1" value="Rectum">B. Rectum</p>
+        <p><input type="radio" name="question1" value="Liver">C. Liver</p>
+        <p><input type="radio" name="question1" value="IIeum">D. IIeum</p>
+    </div>
+
+     <div class="main-div">
+        <p>Q2. Stomach epithelial cells in the body secrete ________:</p>
+        <p><input type="radio" name="question2" value="Hydrochloric acid">A. Hydrochloric acid</p>
+        <p><input type="radio" name="question2" value="Oxytocin">B. Oxytocin</p>
+        <p><input type="radio" name="question2" value="Adrenaline">C. Adrenaline</p>
+        <p><input type="radio" name="question2" value="Testosterone">D. Testosterone</p>     
+    </div>
+
+   <div class="main-div">
+        <p>Q3. Night blindness and xerophthalmia are generally conditions associated with the deficiency of which vitamin?:</p>
+        <p><input type="radio" name="question3" value="Vitamin B">A. Vitamin B</p>
+        <p><input type="radio" name="question3" value="Vitamin K">B. Vitamin K</p>
+        <p><input type="radio" name="question3" value="Vitamin B2">C. Vitamin B2</p>
+        <p><input type="radio" name="question3" value="Vitamin A">D. Vitamin A</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. ___________ are functional units of food absorption.:</p>
+        <p><input type="radio" name="question4" value="Red blood cells">A. Red blood cells</p>
+        <p><input type="radio" name="question4" value="Small intestine">B. Small intestine</p>
+        <p><input type="radio" name="question4" value="Villi">C. Villi</p>
+        <p><input type="radio" name="question4" value="Aggregated lymphoid nodules">D. Aggregated lymphoid nodules</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. Where are the parotid glands located?:</p>
+        <p><input type="radio" name="question5" value="Below the stomach">A. Below the stomach</p>
+        <p><input type="radio" name="question5" value="Behind and above the pancreas">B. Behind and above the pancreas</p>
+        <p><input type="radio" name="question5" value="Below and in front of the ear canal">C. Below and in front of the ear canal</p>
+        <p><input type="radio" name="question5" value="Underneath the armpits">D. Underneath the armpits</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. The maximum amount of carbon dioxide in the human body is transported as::</p>
+        <p><input type="radio" name="question6" value="Bicarbonate">A. Bicarbonate</p>
+        <p><input type="radio" name="question6" value="Carbide">B. Carbidexd</p>
+        <p><input type="radio" name="question6" value="Amylase">C. Amylase</p>
+        <p><input type="radio" name="question6" value="None of the above">D. None of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. Which of the following organisms have book lungs?:</p>
+        <p><input type="radio" name="question7" value="Spider">A. Spider</p>
+        <p><input type="radio" name="question7" value="Ant">B. Ant</p>
+        <p><input type="radio" name="question7" value="Penguin">C. Penguin</p>
+        <p><input type="radio" name="question7" value="Sealion">D. Sealion</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. Altitude sickness is typically caused due t:</p>
+        <p><input type="radio" name="question8" value="The partial pressure of oxygen">A. The partial pressure of oxygen</p>
+        <p><input type="radio" name="question8" value="Increased levels of CO2 in bloode">B. Increased levels of CO2 in blood</p>
+        <p><input type="radio" name="question8" value="Cold temperatures">C. Cold temperatures</p>
+        <p><input type="radio" name="question8" value="None of the above">D. None of the above</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. Hypopnea is a condition where:</p>
+        <p><input type="radio" name="question9" value="The airway becomes partially obstructed">A. The airway becomes partially obstructed</p>
+        <p><input type="radio" name="question9" value="The blood does not clot properly">B. The blood does not clot properly</p>
+        <p><input type="radio" name="question9" value="The lungs cannot eliminate the excess carbon dioxide from the body">C. The lungs cannot eliminate the excess carbon dioxide from the body</p>
+        <p><input type="radio" name="question9" value="The blood oxygen levels are abnormally low">D. The blood oxygen levels are abnormally low</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. Emphysema is characterized by:</p>
+        <p><input type="radio" name="question10" value="Loss of peripheral vision">A.  Loss of peripheral vision</p>
+        <p><input type="radio" name="question10" value="Shortness of breath">B. Shortness of breath</p>
+        <p><input type="radio" name="question10" value="Chronic Diarrhea">C. Chronic Diarrhea</p>
+        <p><input type="radio" name="question10" value="Slow clotting from wounds">D. Slow clotting from wounds</p>
+    </div>
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/human.js' %}"></script>
+{% endblock main %}

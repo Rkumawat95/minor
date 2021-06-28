@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+    <section class="slider text-center" id="slider">
+        <h2>Select your Quiz Subject</h2>
+            <div class="slider-content">
+                  <li><a href="{% url 'plant' %}"><h2>Plant Physiology</h2></a></li>
+            </div>
+            <div class="slider-content">
+                <li><a href="{% url 'human' %}"><h2>Human Physiology</h2></a></li>
+            </div>
+            <div class="slider-content">
+              <li><a href="{% url 'diversity' %}"><h2>Diversity of living organisms</h2></a></li>
+          </div>
+    </section>
+</div>
+{% endblock main %}

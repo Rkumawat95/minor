@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. With increase of temperature, Which of these change?</p>
+        <p><input type="radio" name="question1" value="Molality">A. Molality</p>
+        <p><input type="radio" name="question1" value="Weight Fraction of Solute">B. Weight Fraction of Solute</p>
+        <p><input type="radio" name="question1" value="Molarity">C. Molarity</p>
+        <p><input type="radio" name="question1" value="Mole Fraction">D. Mole Fraction</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q2. 25 ml of a solution of barium hydroxide on titration with a 0.1 molar solution of hydrochloric acid gave a litre value of 35 ml. The molarity of barium hydroxide solution was:</p>
+        <p><input type="radio" name="question2" value="0.14">A. 0.14</p>
+        <p><input type="radio" name="question2" value="0.28">B. 0.28</p>
+        <p><input type="radio" name="question2" value="0.35">C. 0.35</p>
+        <p><input type="radio" name="question2" value="0.07">D. 0.07</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q3.The molarity of a solution obtained by mixing 750 mL of 0.5(M) HCL with 250 mL of 2(M) HCL will be:</p>
+        <p><input type="radio" name="question3" value="1.00 M">A. 1.00 M</p>
+        <p><input type="radio" name="question3" value="1.75 M">B. 1.75 M</p>
+        <p><input type="radio" name="question3" value="0.975 M">C. 0.975 M</p>
+        <p><input type="radio" name="question3" value="0.875 M">D. 0.875 M</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. The ratio of masses of oxygen and nitrogen in a particular gaseous mixture is 1:4. The ratio of number of their molecule is:</p>
+        <p><input type="radio" name="question4" value="1:8">A. 1:8</p>
+        <p><input type="radio" name="question4" value="3:16">B. 3:16</p>
+        <p><input type="radio" name="question4" value="1:4">C. 1:4</p>
+        <p><input type="radio" name="question4" value="7:32">D. 7:32</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. 5 L of an alkane requires 25 L of oxygen for its complete combustion. If all volumes are measured at constant temperature and pressure, the alkane is:</p>
+        <p><input type="radio" name="question5" value="Ethane">A. Ethane</p>
+        <p><input type="radio" name="question5" value="Propane">B. Propane</p>
+        <p><input type="radio" name="question5" value="Butane">C. Butane</p>
+        <p><input type="radio" name="question5" value="Isobutane">D. Isobutane</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. The volume of 0.1N dubasic acid sufficient to neutralize 1 g of a base that furnishes 0.04 mole of OH in aqueous solution is:</p>
+        <p><input type="radio" name="question6" value="200 mL">A. 200 mL</p>
+        <p><input type="radio" name="question6" value="400 mL">B. 400 mL</p>
+        <p><input type="radio" name="question6" value="600 mL">C. 600 mL</p>
+        <p><input type="radio" name="question6" value="800 mL">D. 800 mL</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. For an ideal gas, number of moles per litre in terms of its pressure P, gas constant R and temperature T is :</p>
+        <p><input type="radio" name="question7" value="PT/R">A. PT/R</p>
+        <p><input type="radio" name="question7" value="PRT">B. PRT</p>
+        <p><input type="radio" name="question7" value="P/RT">C. P/RT</p>
+        <p><input type="radio" name="question7" value="RT/P">D. RT/P</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. kinetic theory of gases proves:</p>
+        <p><input type="radio" name="question8" value="only Boyle's law">A. only Boyle's law</p>
+        <p><input type="radio" name="question8" value="only charle's">B. only charle's</p>
+        <p><input type="radio" name="question8" value="only Avogadro's law">C. only Avogadro's law</p>
+        <p><input type="radio" name="question8" value="All of these">D. All of these</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. According to the kinetic theory of gases, in an ideal gas, between two successive collisions of a gas molecule travels:</p>
+        <p><input type="radio" name="question9" value="in a wavy path">A. in a wavy path</p>
+        <p><input type="radio" name="question9" value="in a straight line path">B. in a straight line path</p>
+        <p><input type="radio" name="question9" value="with an accelerated velocity">C. with an accelerated velocity</p>
+        <p><input type="radio" name="question9" value="in a circular path">D. in a circular path</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. The compressibility factor for a real gas at high pressure is:</p>
+        <p><input type="radio" name="question10" value="1 + RT/pb">A. 1 + RT/pb</p>
+        <p><input type="radio" name="question10" value="1">B. 1</p>
+        <p><input type="radio" name="question10" value="1 + pb/RT">C. 1 + pb/RT</p>
+        <p><input type="radio" name="question10" value="1 - pb/RT">D. 1 - pb/RT</p>
+    </div>
+
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/chemistry1.js' %}"></script>
+{% endblock main %}

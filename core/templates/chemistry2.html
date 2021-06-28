@@ -1,0 +1,95 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. One of the essential minerals in the human body is salt. How much salt (NaCl) is in the average adult human body?</p>
+        <p><input type="radio" name="question1" value="0">A. 1 kilogram</p>
+        <p><input type="radio" name="question1" value="1">B. 500 grams</p>
+        <p><input type="radio" name="question1" value="2">C. 250 grams</p>
+        <p><input type="radio" name="question1" value="3">D. practically none</p>
+    </div>
+
+     <div class="main-div">
+        <p>Q2. If you fill a glass to the brim with ice water and the ice melts, what will happen?</p>
+        <p><input type="radio" name="question2" value="0">A. The glass will over flow as the ice turns to water.</p>
+        <p><input type="radio" name="question2" value="1">B. The level of water in the glass will remain unchanged as the ice melts.</p>
+        <p><input type="radio" name="question2" value="2">C. The water level will drop slightly as the ice melts.</p>
+        <p><input type="radio" name="question2" value="3">D. I'll never find out because I'll drink the water or walk away before anything happens.</p>
+    </div>
+
+   <div class="main-div">
+        <p>Q3.Water-based liquids can be described as acidic, neutral, or basic, with respect to pH. Which of these describes milk?</p>
+        <p><input type="radio" name="question3" value="0">A. Slightly acidic</p>
+        <p><input type="radio" name="question3" value="1">B. Neutral</p>
+        <p><input type="radio" name="question3" value="2">C. Strong acid</p>
+        <p><input type="radio" name="question3" value="3">D. Slightly basic</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. The symbol Sb stands for stibnum or stibnite. What is the modern name of this element?</p>
+        <p><input type="radio" name="question4" value="0">A. Arsenic</p>
+        <p><input type="radio" name="question4" value="1">B. Tin</p>
+        <p><input type="radio" name="question4" value="2">C. Antimony</p>
+        <p><input type="radio" name="question4" value="3">D. Samarium</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. DNA codes for proteins, which are the building blocks of organisms. What is the most abundant protein in the human body?</p>
+        <p><input type="radio" name="question5" value="0">A. Tubulin</p>
+        <p><input type="radio" name="question5" value="1">B. Collagen</p>
+        <p><input type="radio" name="question5" value="2">C. Albumin</p>
+        <p><input type="radio" name="question5" value="3">D. Keratin</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. Noble gases are inert because they have completed outer electron shells. Which of these elements isn't a noble gas?
+           
+        </p>
+        <p><input type="radio" name="question6" value="0">A. Helium</p>
+        <p><input type="radio" name="question6" value="1">B. Argon</p>
+        <p><input type="radio" name="question6" value="2">C. Chlorine </p>
+        <p><input type="radio" name="question6" value="3">D. Krypton</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. What is the most common isotope of hydrogen?</p>
+        <p><input type="radio" name="question7" value="0">A. Protium</p>
+        <p><input type="radio" name="question7" value="1">B. Deuterium</p>
+        <p><input type="radio" name="question7" value="2">C. Tritum</p>
+        <p><input type="radio" name="question7" value="3">D. Hydrogen only has one isotope!</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. You can't live without water! What is its chemical formula?</p>
+        <p><input type="radio" name="question8" value="0">A. H2</p>
+        <p><input type="radio" name="question8" value="1">B. O2</p>
+        <p><input type="radio" name="question8" value="2">C. H2O2</p>
+        <p><input type="radio" name="question8" value="3">D. H2O</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. Who is credited with the invention of the modern periodic table?</p>
+        <p><input type="radio" name="question9" value="0">A. Nobel</p>
+        <p><input type="radio" name="question9" value="1">B. Mendeleev</p>
+        <p><input type="radio" name="question9" value="2">C. Mendel</p>
+        <p><input type="radio" name="question9" value="3">D. Lavoisier</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. Which of these elements is a nonmetal?</p>
+        <p><input type="radio" name="question10" value="0">A. Sulfur</p>
+        <p><input type="radio" name="question10" value="1">B. Manganese</p>
+        <p><input type="radio" name="question10" value="2">C. Aluminum</p>
+        <p><input type="radio" name="question10" value="3">D. Beryllium</p>
+    </div>
+
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/chemistry2.js' %}"></script>
+{% endblock main %}

@@ -1,0 +1,92 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. Algae and Fungi are in the division _________</p>
+        <p><input type="radio" name="question1" value="Viperidae">A. Viperidae</p>
+        <p><input type="radio" name="question1" value="Thallophyta">B. Thallophyta</p>
+        <p><input type="radio" name="question1" value="Bryophyta">C. Bryophyta</p>
+        <p><input type="radio" name="question1" value="All of the above">D. All of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q2. __________ have cell walls made of chitin:</p>
+        <p><input type="radio" name="question2" value="Fungi">A. Fungi</p>
+        <p><input type="radio" name="question2" value="Green plants">B. Green plants</p>
+        <p><input type="radio" name="question2" value="Human foetus">C. Human foetus</p>
+        <p><input type="radio" name="question2" value="All of the above">D. All of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q3.________ are saprophytic, eukaryotic organisms:</p>
+        <p><input type="radio" name="question3" value="Blue-green algae">A. Blue-green algae</p>
+        <p><input type="radio" name="question3" value="Mycoplasma">B. Mycoplasma</p>
+        <p><input type="radio" name="question3" value="Archaea">C. Archaea</p>
+        <p><input type="radio" name="question3" value="None of the above">D. None of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. Funaria belongs to the division ______:</p>
+        <p><input type="radio" name="question4" value="Gnetophyta">A. Gnetophyta</p>
+        <p><input type="radio" name="question4" value="Bryophyta">B. Bryophyta</p>
+        <p><input type="radio" name="question4" value="Magnoliophyta">C. Magnoliophyta</p>
+        <p><input type="radio" name="question4" value="None of the above">D. None of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. Identify the incorrect statement:</p>
+        <p><input type="radio" name="question5" value="Birds are warmblooded">A. Birds are warmblooded</p>
+        <p><input type="radio" name="question5" value="Birds are cold-blooded">B. Birds are cold-blooded</p>
+        <p><input type="radio" name="question5" value="Birds are oviparous">C. Birds are oviparous</p>
+        <p><input type="radio" name="question5" value="Forelimbs of birds are homologous to bats">D. Forelimbs of birds are homologous to bats</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. The following is not an oviparous animal:</p>
+        <p><input type="radio" name="question6" value="Crow">A. Crow</p>
+        <p><input type="radio" name="question6" value="Eagle">B. Eagle</p>
+        <p><input type="radio" name="question6" value="Crocodiles">C. Crocodiles</p>
+        <p><input type="radio" name="question6" value="None of the above">D. None of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. The following is not a viviparous animal:</p>
+        <p><input type="radio" name="question7" value="Echidna">A. Echidna</p>
+        <p><input type="radio" name="question7" value="Humans">B. Humans</p>
+        <p><input type="radio" name="question7" value="Mice">C. Mice</p>
+        <p><input type="radio" name="question7" value="Cats">D. Cats</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. __________ is an example of an ovoviviparous animal:</p>
+        <p><input type="radio" name="question8" value="Viper">A. Viper</p>
+        <p><input type="radio" name="question8" value="Crow">B. Crow</p>
+        <p><input type="radio" name="question8" value="Seagull">C. Seagull</p>
+        <p><input type="radio" name="question8" value="Hawk">D. Hawk</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. Which of the following animals possess a vascular system?:</p>
+        <p><input type="radio" name="question9" value="Starfish">A. Starfish</p>
+        <p><input type="radio" name="question9" value="Hydra">B. Hydra</p>
+        <p><input type="radio" name="question9" value="Jellyfish">C. Jellyfish</p>
+        <p><input type="radio" name="question9" value="All of the above">D. All of the above</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. Most paramecium move with the help of_______:</p>
+        <p><input type="radio" name="question10" value="Villi">A. Villi</p>
+        <p><input type="radio" name="question10" value="Stationary">B. Stationary</p>
+        <p><input type="radio" name="question10" value="Cilia">C. Cilia</p>
+        <p><input type="radio" name="question10" value="All of the above">D. All of the above</p>
+    </div>
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/diversity.js' %}"></script>
+{% endblock main %}

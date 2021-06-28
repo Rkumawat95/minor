@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block main %}
+<div class="container"  style="margin-top: 30px;">
+<form class="main" action="" name="quiz" id="quiz">
+    <div class="main-div">
+        <p>Q1. Sun has incessant source of energy, which is created by …</p>
+        <p><input type="radio" name="question1" value="0">A. Radioactive elements</p>
+        <p><input type="radio" name="question1" value="1">B. Nuclear fusion</p>
+        <p><input type="radio" name="question1" value="2">C. Nuclear fission</p>
+        <p><input type="radio" name="question1" value="3">D. A huge volcano</p>
+    </div>
+
+     <div class="main-div">
+        <p>Q2. When air bubble put in water, it acts like …</p>
+        <p><input type="radio" name="question2" value="0">A. Concave lens</p>
+        <p><input type="radio" name="question2" value="1">B. Concave mirror</p>
+        <p><input type="radio" name="question2" value="2">C. Convex lens</p>
+        <p><input type="radio" name="question2" value="3">D. Convex mirror</p>
+    </div>
+
+   <div class="main-div">
+        <p>Q3. What is the frequency range of microwave?</p>
+        <p><input type="radio" name="question3" value="0">A. 0.3 to 300 gigahertz</p>
+        <p><input type="radio" name="question3" value="1">B. 30 to 3000 gigahertz</p>
+        <p><input type="radio" name="question3" value="2">C. 3.0 to 300 gigahertz</p>
+        <p><input type="radio" name="question3" value="3">D. 30.0 to 3000 gigahertz</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q4. What is the frequency range of AM radio wave?</p>
+        <p><input type="radio" name="question4" value="0">A. 235 to 1305 kHz</p>
+        <p><input type="radio" name="question4" value="1">B. 835 to 1605 kHz</p>
+        <p><input type="radio" name="question4" value="2">C. 535 to 1805 kHz</p>
+        <p><input type="radio" name="question4" value="3">D. 535 to 1605 kHz</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q5. White shirt makes us feel cool in comparison to the shirts of other colors?</p>
+        <p><input type="radio" name="question5" value="0">A. White shirt is naturally cool</p>
+        <p><input type="radio" name="question5" value="1">B. White shirt absorbs all the coming solar radiation</p>
+        <p><input type="radio" name="question5" value="2">C. White shirt reflects back all the coming solar radiation</p>
+        <p><input type="radio" name="question5" value="3">D. White shirt does not allow to pass heat inside</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q6. The value of gravity on earth varies because of …</p>
+        <p><input type="radio" name="question6" value="0">A. Shape of the earth</p>
+        <p><input type="radio" name="question6" value="1">B. Rotation of the earth</p>
+        <p><input type="radio" name="question6" value="2">C. Revolution of the earth</p>
+        <p><input type="radio" name="question6" value="3">D. A & B both</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q7. To see the full image of an object, the minimum height of a plane mirror should be …</p>
+        <p><input type="radio" name="question7" value="0">A. Equal to the height of the object</p>
+        <p><input type="radio" name="question7" value="1">B. About half of the height of the object</p>
+        <p><input type="radio" name="question7" value="2">C. One fourth of the height of the object</p>
+        <p><input type="radio" name="question7" value="3">D. Two times the height of the object</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q8. Which among the following statements correctly explains Ferromagnetism?</p>
+        <p><input type="radio" name="question8" value="0">A. It explains – how does a material transform into a magnet</p>
+        <p><input type="radio" name="question8" value="1">B.  It explains – how does a magnet lose its magnetic property</p>
+        <p><input type="radio" name="question8" value="2">C. It explains the properties of a super magnet</p>
+        <p><input type="radio" name="question8" value="3">D. It explains the comparative features of two magnetic materials</p>
+    </div> 
+
+    <div class="main-div">
+        <p>Q9. Which one of the following mirrors is used in a solar cooker?</p>
+        <p><input type="radio" name="question9" value="0">A. Convex mirror</p>
+        <p><input type="radio" name="question9" value="1">B. Bifocal mirror</p>
+        <p><input type="radio" name="question9" value="2">C. Concave mirror</p>
+        <p><input type="radio" name="question9" value="3">D.  Plane mirror</p>
+    </div>
+
+    <div class="main-div">
+        <p>Q10. The cooling system of a motor car works on the principle of …</p>
+        <p><input type="radio" name="question10" value="0">A. Conduction</p>
+        <p><input type="radio" name="question10" value="1">B. Convection</p>
+        <p><input type="radio" name="question10" value="2">C. Radiation</p>
+        <p><input type="radio" name="question10" value="3">D. Gravitation</p>
+    </div>
+
+    <input style="color: darkcyan;" type="button" name="" value="Submit" onclick="check()">
+</form>
+<p id="result"></p>
+</div>
+<script src="{% static 'js/physics2.js' %}"></script>
+{% endblock main %}

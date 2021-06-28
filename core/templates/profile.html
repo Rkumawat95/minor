@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block main %}
+<div class="container text-center text-secondry box">
+    <div style="padding: 30px;">
+        <h3 style="color: slategray;">Profile</h3>
+        <h4>UserName : {{ request.user.username }}</h4>
+        <h4>FirstName : {{ request.user.first_name }}</h4>
+        <h4>LastName : {{ request.user.last_name }}</h4>
+        <h4>Email : {{ request.user.email }}</h4><br>
+        <h4>Edit Profile  <a href="{% url 'Eprofile' %}">Edit</a></h4>
+    </div>
+</div>
+{% endblock main %}

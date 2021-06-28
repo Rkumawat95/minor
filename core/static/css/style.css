@@ -1,0 +1,33 @@
+.box{
+    border: 3px solid blue;
+    margin-top: 30px;
+}
+
+.adiv{
+    background: chartreuse;
+    height: 300px;
+    border: 3px solid blue;
+    margin-top: 30px;
+}
+
+.bdiv{
+    background:darkorange;
+    height: 300px;
+    border: 3px solid blue;
+    margin-top: 30px;
+}
+
+.cdiv{
+    background:cyan;
+    height: 300px;
+    border: 3px solid blue;
+    margin-top: 30px;
+}
+
+.ddiv{
+    background:chocolate;
+    height: 300px;
+    border: 3px solid blue;
+    margin-top: 30px;
+}
+
